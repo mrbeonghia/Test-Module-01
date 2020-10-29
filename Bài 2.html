@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    function find(n, array) {
+        let result = "Số nhập vào không có trong mảng";
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === n) {
+                result = "Số nhập vào ở vị trí thứ " + i + " của mảng";
+            }
+        }
+        alert(result);
+    }
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let num = +prompt("Nhập n:");
+    find(num, arr);
+</script>
+</body>
+</html>

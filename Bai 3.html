@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let str=prompt("Chuoi kiem tra")
+    let checkArr=["a","o","u","i","e"]
+    let result="";
+    function check(str) {
+        let count=0;
+        for (let i = 0; i < str.length; i++) {
+            for (let j = 0; j < checkArr.length; j++) {
+                if (checkArr[j]==str[i]){
+                    count++
+                }
+            }
+        }
+        if(count===0){
+            return `Chuỗi không chứa ký tự nguyên âm`;
+        }
+        else {
+            return `Chuỗi có số ký tự nguyên âm là: ${count}`;
+
+        }
+    }
+    alert(check(str));
+</script>
+</body>
+</html>
